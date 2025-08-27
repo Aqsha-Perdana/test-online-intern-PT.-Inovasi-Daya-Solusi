@@ -43,6 +43,6 @@ public class Transaction {
     @Column(name = "createby")      
     private String createdBy;
 
-    @Column(name = "createon")      // huruf O besar
+    @Column(name = "createon")      
     private LocalDateTime createdOn;
 }
