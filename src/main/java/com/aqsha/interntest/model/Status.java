@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "status")   // sesuaikan dengan nama tabel di MySQL
+@Table(name = "status")  
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

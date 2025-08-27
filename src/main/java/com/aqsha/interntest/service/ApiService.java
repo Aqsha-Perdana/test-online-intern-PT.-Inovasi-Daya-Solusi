@@ -35,7 +35,7 @@ public class ApiService {
             t.getAmount() != null ? t.getAmount().stripTrailingZeros().toPlainString() : null
         );
         dto.setCustomerName(t.getCustomerName());
-        dto.setStatus(t.getStatus());  // langsung Integer 0/1
+        dto.setStatus(t.getStatus());  
         dto.setTransactionDate(
             t.getTransactionDate() != null ? t.getTransactionDate().format(FMT) : null
         );
@@ -46,7 +46,6 @@ public class ApiService {
         return dto;
     }).toList();
 
-    // Status list
     List<StatusItemDTO> status = statusRepository.findAll().stream().map(s -> {
         StatusItemDTO dto = new StatusItemDTO();
         dto.setId(s.getId());

@@ -26,21 +26,21 @@ public class Transaction {
     @Column(name = "productid")
     private String productId;
 
-    @Column(name = "productname")   // huruf N besar
+    @Column(name = "productname")   
     private String productName;
 
     private BigDecimal amount;
 
-    @Column(name = "customername")  // huruf N besar
+    @Column(name = "customername")  
     private String customerName;
 
     @Column(name = "status")
     private Integer status;
 
-    @Column(name = "transactiondate")  // huruf D besar
+    @Column(name = "transactiondate")  
     private LocalDateTime transactionDate;
 
-    @Column(name = "createby")      // huruf B besar
+    @Column(name = "createby")      
     private String createdBy;
 
     @Column(name = "createon")      // huruf O besar
